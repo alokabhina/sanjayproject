@@ -1,0 +1,91 @@
+.footer {
+  background-color: #1E2A38;
+  color: #ffffff;
+  padding: 30px 50px 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-content-left,
+.footer-content-center,
+.footer-content-right {
+  flex: 1;
+  min-width: 200px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.footer-content-left p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.footer-social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.footer-social-icons .social-link {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-social-icons .social-link img {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+.footer-content-center h2,
+.footer-content-right h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.footer-content-center ul,
+.footer-content-right ul {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+}
+
+.footer-content-center li,
+.footer-content-right li {
+  margin: 6px 0;
+  color: #ffffff;
+}
+
+.footer-content-center li:hover,
+.footer-content-right li:hover,
+.footer-social-icons .social-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-copyright {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 13px;
+  color: #ffffff;
+  margin-top: 20px;
+  border-top: 1px solid #ffffff33;
+}
