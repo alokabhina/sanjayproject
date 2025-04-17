@@ -7,6 +7,9 @@ import Cart from './Pages/Cart/Cart';
 import Order from './Pages/Order/Order';
 import { Route, Routes } from 'react-router-dom';
 import Login from './Components/Login/Login';
+import Menu from './Components/Menu/Menu';
+import Contact from './Components/ContactUs/Contact'; 
+
 
 function App() { 
   const [showLogin, setShowLogin] = useState(false);
@@ -21,6 +24,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/order" element={<Order />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       
       <Footer />

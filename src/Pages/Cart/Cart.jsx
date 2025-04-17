@@ -8,7 +8,7 @@ const Cart = () => {
   const navigate = useNavigate();
 
   const subtotal = getTotalCartAmount();
-  const deliveryFee = subtotal === 0 ? 0 : 2;
+  const deliveryFee = subtotal === 0 ? 0 : 30;
   const totalAmount = subtotal + deliveryFee;
 
   const handleRemove = (id) => {
@@ -41,13 +41,13 @@ const Cart = () => {
               <div className="cart-items-row" key={item._id}>
                 <img src={item.image} alt={item.name} />
                 <p>{item.name}</p>
-                <p>${item.price.toFixed(2)}</p>
+                <p>₹{item.price.toFixed(2)}</p>
                 <p>{quantity}</p>
-                <p>${(item.price * quantity).toFixed(2)}</p>
+                <p>₹{(item.price * quantity).toFixed(2)}</p>
                 <button 
                   onClick={() => handleRemove(item._id)} 
                   className="remove-button" 
-                  aria-label={`Remove ${item.name}`}
+                  aria-label={`Remove ₹{item.name}`}
                 >
                   &times;
                 </button>
@@ -67,20 +67,20 @@ const Cart = () => {
           <h2>Cart Totals</h2>
           <div className="cart-total-row">
             <span>Subtotal</span>
-            <span>${subtotal.toFixed(2)}</span>
+            <span>₹{subtotal.toFixed(2)}</span>
           </div>
           <div className="cart-total-row">
             <span>Delivery Fee</span>
-            <span>${deliveryFee.toFixed(2)}</span>
+            <span>₹{deliveryFee.toFixed(2)}</span>
           </div>
           <div className="cart-total-row total">
             <strong>Total</strong>
-            <strong>${totalAmount.toFixed(2)}</strong>
+            <strong>₹{totalAmount.toFixed(2)}</strong>
           </div>
           <button 
             onClick={handleCheckout} 
             disabled={subtotal === 0}
-            className={`checkout-button ${subtotal === 0 ? 'disabled' : ''}`}
+            className={`checkout-button ₹{subtotal === 0 ? 'disabled' : ''}`}
           >
             Proceed to Checkout
           </button>

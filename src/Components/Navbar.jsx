@@ -10,7 +10,7 @@ const Navbar = ({ setShowLogin }) => {
     const { getTotalCartAmount } = useContext(StoreContext);
 
     const handleMenuClick = (menuItem) => {
-        setMenu(menuItem);
+        setMenu(menuItem.toLowerCase());
     }
 
     return (
@@ -28,8 +28,8 @@ const Navbar = ({ setShowLogin }) => {
                 </li>
                 <li>
                     <Link 
-                        to="#menu" 
-                        onClick={() => handleMenuClick("Menu")} 
+                        to="/menu" 
+                        onClick={() => handleMenuClick("menu")} 
                         className={menu === "menu" ? "active" : ""}
                     >
                         Menu
@@ -37,7 +37,7 @@ const Navbar = ({ setShowLogin }) => {
                 </li>
                 <li>
                     <Link 
-                        to="#footer" 
+                        to="/contact" 
                         onClick={() => handleMenuClick("contact")} 
                         className={menu === "contact" ? "active" : ""}
                     >

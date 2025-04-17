@@ -161,17 +161,17 @@ const Order = () => {
             <div>
               <div className="cart-total-details">
                 <p>Subtotal</p>
-                <p>${cartTotal.toFixed(2)}</p>
+                <p>₹{cartTotal.toFixed(2)}</p>
               </div>
               <hr />
               <div className="cart-total-details">
                 <p>Delivery Fee</p>
-                <p>${deliveryFee.toFixed(2)}</p>
+                <p>₹{deliveryFee.toFixed(2)}</p>
               </div>
               <hr />
               <div className="cart-total-details">
                 <b>Total</b>
-                <b>${totalAmount.toFixed(2)}</b>
+                <b>₹{totalAmount.toFixed(2)}</b>
               </div>
             </div>
             <button type="submit">PROCEED TO PAYMENT</button>
