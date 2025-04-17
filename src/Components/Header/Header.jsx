@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './header.css';
+import './Header.css';
 
 const Header = ({ onMenuToggle }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
